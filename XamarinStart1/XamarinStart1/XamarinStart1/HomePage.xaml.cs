@@ -14,5 +14,12 @@ namespace XamarinStart1
         {
             InitializeComponent();
         }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+
+            string text = MainEntry.Text;
+            MainLabel.Text = "Hello  " + text;
+        }
     }
 }
