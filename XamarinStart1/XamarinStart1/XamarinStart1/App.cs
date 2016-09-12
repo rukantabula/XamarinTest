@@ -12,7 +12,9 @@ namespace XamarinStart1
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
+            MainPage = new HomePage();
+
+            /*
             {
                 Content = new StackLayout
                 {
@@ -24,7 +26,7 @@ namespace XamarinStart1
                         }
                     }
                 }
-            };
+            }; */
         }
 
         protected override void OnStart()
