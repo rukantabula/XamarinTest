@@ -9,13 +9,19 @@
 
    <Grid Padding="0,0,0,10">
      <Entry x:Name="MainEntry"
-           BackgroundColor="Gray"/>
+           BackgroundColor="Gray"
+            Text="Type your name"/>
 
    </Grid>
        
      <Button Clicked="Button_OnClicked" 
              Text="Say Hello !"
             BackgroundColor="Green" 
+             TextColor="White"
+             />
+   <Button Clicked="NavigateButton_OnClicked"
+             Text="Navigate to Second Page"
+            BackgroundColor="Green"
              TextColor="White"
              />
      <Label x:Name="MainLabel"

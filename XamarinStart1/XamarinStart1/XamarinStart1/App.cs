@@ -12,7 +12,7 @@ namespace XamarinStart1
         public App()
         {
             // The root page of your application
-            MainPage = new HomePage();
+            MainPage = new NavigationPage(new HomePage());
 
             /*
             {
