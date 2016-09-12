@@ -5,5 +5,17 @@
              BackgroundColor="Blue"
              Title="Home">
 
-  <ListView x:Name="MainListView"/>
+  <ListView x:Name="MainListView"
+         HasUnevenRows="True">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+        <StackLayout Orientation="Vertical">
+          <Label Text="{Binding Name}"/>
+          <Label Text="{Binding Age}"/>
+        </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
 </ContentPage>

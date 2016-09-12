@@ -14,10 +14,29 @@ namespace XamarinStart1
         {
             InitializeComponent();
 
-            MainListView.ItemsSource = new List<string>
+            MainListView.ItemsSource = new List<Person>
             {
+                new Person
+                {
+                    Name = "Mohamed",
+                    Age = 26
+                },
+                    new Person
+                {
+                    Name = "benson",
+                    Age = 34
+                },
+                        new Person
+                {
+                    Name = "kam",
+                    Age = 23
+                },
+                    new Person
+                {
+                    Name = "Allan",
+                    Age = 20
+                }
 
-                "Mohamed","Allan","benson","kam"
             };
         }
 
