@@ -10,9 +10,10 @@ namespace XamarinStart1
 {
     public partial class Page1 : ContentPage
     {
-        public Page1()
+        public Page1(string paramter)
         {
             InitializeComponent();
+            MainLabel.Text = paramter;
         }
     }
 }

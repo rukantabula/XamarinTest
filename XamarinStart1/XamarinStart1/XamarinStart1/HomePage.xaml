@@ -21,7 +21,7 @@
              />
    <Button Clicked="NavigateButton_OnClicked"
              Text="Navigate to Second Page"
-            BackgroundColor="Green"
+            BackgroundColor="Blue"
              TextColor="White"
              />
      <Label x:Name="MainLabel"
