@@ -12,22 +12,19 @@ namespace XamarinStart1
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new HomePage());
-
-            /*
+            //   MainPage = new TabbedPage
+            MainPage = new CarouselPage
             {
-                Content = new StackLayout
+                Children =
                 {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            }; */
-        }
+                    new HomePage(),
+                    new Page1("Hello!")
+                 }
+
+
+
+            };
+    }
 
         protected override void OnStart()
         {
