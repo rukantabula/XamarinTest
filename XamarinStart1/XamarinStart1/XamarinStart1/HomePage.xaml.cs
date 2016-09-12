@@ -13,19 +13,14 @@ namespace XamarinStart1
         public HomePage()
         {
             InitializeComponent();
+
+            MainListView.ItemsSource = new List<string>
+            {
+
+                "Mohamed","Allan","benson","kam"
+            };
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
-
-            string text = MainEntry.Text;
-            MainLabel.Text = "Hello  " + text;
-        }
-
-        private async void NavigateButton_OnClicked(object sender, EventArgs e)
-        {
-
-            await Navigation.PushAsync(new Page1(MainEntry.Text));
-        }
+    
     }
 }

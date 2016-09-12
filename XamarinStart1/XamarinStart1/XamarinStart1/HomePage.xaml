@@ -2,32 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinStart1.HomePage"
-             BackgroundColor="White"
+             BackgroundColor="Blue"
              Title="Home">
-  
- <StackLayout BackgroundColor="White" 
-              Padding="20" 
-              VerticalOptions="Center">
 
-   <Grid Padding="0,0,0,10">
-     <Entry x:Name="MainEntry"
-           BackgroundColor="Gray"
-            Text="Type your name"/>
-
-   </Grid>
-       
-     <Button Clicked="Button_OnClicked" 
-             Text="Say Hello !"
-            BackgroundColor="Green" 
-             TextColor="White"
-             />
-   <Button Clicked="NavigateButton_OnClicked"
-             Text="Navigate to Second Page"
-            BackgroundColor="Blue"
-             TextColor="White"
-             />
-     <Label x:Name="MainLabel"
-            TextColor="Gray"
-            FontSize="40"/>
- </StackLayout >
+  <ListView x:Name="MainListView"/>
 </ContentPage>
