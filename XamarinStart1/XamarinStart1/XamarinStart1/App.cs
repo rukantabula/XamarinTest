@@ -12,18 +12,10 @@ namespace XamarinStart1
         public App()
         {
             // The root page of your application
-            //   MainPage = new TabbedPage
-            MainPage = new CarouselPage
-            {
-                Children =
-                {
-                    new HomePage(),
-                    new Page1("Hello!")
-                 }
+            MainPage = new MiniPage();
+           // MainPage = new CarouselPage
+          
 
-
-
-            };
     }
 
         protected override void OnStart()
