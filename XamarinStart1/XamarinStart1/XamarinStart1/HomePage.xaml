@@ -2,18 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinStart1.HomePage"
-             BackgroundColor="Blue"
+             BackgroundColor="White"
              Title="Home">
 
   <ListView x:Name="MainListView"
          HasUnevenRows="True">
     <ListView.ItemTemplate>
       <DataTemplate>
-        <ViewCell>
-        <StackLayout Orientation="Vertical">
-          <Label Text="{Binding Name}"/>
-          <Label Text="{Binding Age}"/>
+        <ViewCell >    
+            <StackLayout Orientation="Vertical">
+            <Grid BackgroundColor="White"
+                  HeightRequest="10"/>
+                     <StackLayout Orientation="Vertical" 
+                     Padding="20"
+                     BackgroundColor="Purple">
+          <Label Text="{Binding Name}"
+                 Font="Medium"/>
+          <Label Text="{Binding Age}"
+                 Font="Bold"
+                 Opacity="0.6"/>
         </StackLayout>
+        </StackLayout>      
         </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>
